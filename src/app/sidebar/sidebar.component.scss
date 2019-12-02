@@ -1,0 +1,40 @@
+.sidebar-title {
+  font-weight: 700 !important;
+  font-size: 3rem;
+  background: white !important;
+  text-align: center;
+}
+
+ul {
+  align-self: center;
+
+  li {
+    line-height: 3.2;
+    width: 100%;
+    display: block;
+    font-size: 1.6rem;
+    transition: background .3s ease;
+
+    a {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: block;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1.6rem;
+      width: 100%;
+      color: black;
+    }
+    
+    &:hover {
+      background: #C0B190;
+    }
+
+    &:active {
+      background: rgba(192, 177, 144, 0.6);
+
+    }
+
+  }
+
+}

@@ -1,0 +1,39 @@
+.logo-box {
+
+  width: 85%;
+  justify-self: center;
+  display: inherit;
+  grid-template-rows: 5vh;
+  grid-template-columns: auto;
+  grid-template-areas: "logo logo-text"; 
+
+  a {
+    align-self: center;
+    height: min-content;
+  }
+
+  img {
+    grid-area: logo;
+    height: 5rem;
+    float: left;
+  }
+  
+  h1 {
+    margin-left: 1rem;
+    grid-area: logo-text;
+    font-size: 4rem;
+    float: left;
+    color: #7A2C1F;
+    font-family: 'Courgette', cursive !important; 
+  }
+
+  h2 {
+    align-self: center;
+    justify-self: right;
+    grid-area: logo-text;
+    font-size: 2.5rem;
+    color: #7A2C1F;
+    font-family: 'Courgette', cursive !important; 
+  }
+
+}

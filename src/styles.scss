@@ -1,1 +1,96 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 5vh 90vh 5vh;
+  grid-template-columns: 20rem 1fr;
+  
+  grid-template-areas: "side head"
+                       "side main"
+                       "side foot"; 
+
+  & > * {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+  }
+
+}
+
+.header {
+  display: inherit;
+  align-content: center;
+  grid-area: head;
+}
+
+.main-content {
+  display: inherit;
+  grid-area: main;
+  background: #FAFAFA;
+  background-size: 50vw;
+  background-position: left;
+}
+
+.sidebar {
+  display: inherit;
+  grid-area: side;
+}
+
+.footer {
+  display: inherit;
+  grid-area: foot;
+}
+
+.clearfix{
+  clear:both
+}
+
+.recipe {
+
+  overflow: auto;
+  max-height: 85vh;
+  max-width: 80rem;
+  min-width: inherit;
+  padding: 2rem;
+
+  &-title {
+    margin-top: 2rem;
+    font-size: 3.6rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &-img {
+
+    &-container {
+      width: 100%;
+      display: grid;
+      margin: 2rem;
+    }
+    justify-self: center;
+    width: 50%;
+  }
+
+  &-text {
+    margin: 1rem auto;
+    align-self: baseline;
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  &-list {
+
+    list-style: disc;
+    list-style-position: inside;
+
+    &-item {
+      font-size: 1.6rem;
+    }
+
+  }
+
+}
