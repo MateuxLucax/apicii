@@ -1,3 +1,8 @@
+<p align="center">
+  <img height="96" src="https://raw.githubusercontent.com/MateuxLucax/apicii/master/src/assets/img/recipes.svg">
+</p>
+
+
 # Apicii
 
 Recipes blog, built with Angular, for testing purposes
